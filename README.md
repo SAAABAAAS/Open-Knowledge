@@ -16,8 +16,9 @@
 **[Impact](#3-impact)** &nbsp;·&nbsp;
 **[Principles](#4-vision-and-principles)** &nbsp;·&nbsp;
 **[Solution](#5-the-solution)** &nbsp;·&nbsp;
-**[Roadmap](#8-roadmap)** &nbsp;·&nbsp;
-**[Contribute](#12-how-to-contribute)**
+**[Stack](#8-technology-stack)** &nbsp;·&nbsp;
+**[Roadmap](#9-roadmap)** &nbsp;·&nbsp;
+**[Contribute](#13-how-to-contribute)**
 
 </div>
 
@@ -157,7 +158,73 @@ flowchart TB
 
 *Design preference: open standards, open-source code, and federated or decentralized hosting where practical.*
 
-## 8. Roadmap
+## 8. Technology Stack
+
+> [!NOTE]
+> This is the **proposed** stack for the initial phases. Every component is open source or built on open standards, in line with the project's principles of resilience and no vendor lock-in. Choices may evolve as the community grows.
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![IPFS](https://img.shields.io/badge/IPFS-65C2CB?style=for-the-badge&logo=ipfs&logoColor=white)
+![MinIO](https://img.shields.io/badge/MinIO-C72E49?style=for-the-badge&logo=minio&logoColor=white)
+![Meilisearch](https://img.shields.io/badge/Meilisearch-FF5CAA?style=for-the-badge&logo=meilisearch&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+
+</div>
+
+### Core Components
+
+| Layer | Technology | Role |
+|---|---|---|
+| **Frontend** | TypeScript · Next.js · Tailwind CSS | Accessible, fast, low-bandwidth interface for search and reading. |
+| **Backend / API** | Python · FastAPI | Open, documented REST API (OpenAPI) and ingestion services. |
+| **Registry database** | PostgreSQL | Metadata, provenance, versions, and rights status for every item. |
+| **Search** | Meilisearch (MVP) → OpenSearch (scale) | Fast full-text and faceted search across the catalog. |
+| **Archive storage** | IPFS · S3-compatible storage (MinIO) | Content-addressed, redundant, verifiable copies across multiple mirrors. |
+| **Web archiving** | Browsertrix Crawler · ArchiveBox | Capturing and preserving at-risk web pages and sites. |
+| **Background jobs** | Celery · Redis | Crawling, hashing, format conversion, and periodic integrity re-checks. |
+| **Offline access** | Kiwix (ZIM format) | Downloadable collections for low-connectivity regions. |
+| **Infrastructure** | Docker · GitHub Actions | Reproducible environments and automated testing and deployment. |
+| **Documentation** | MkDocs Material | Public documentation for contributors and API users. |
+| **Community** | GitHub Issues and Discussions · Matrix | Open collaboration and governance discussion. |
+
+### Standards and Formats
+
+| Standard | Use |
+|---|---|
+| **WARC** | Container format for archived web content. |
+| **PDF/A** | Long-term preservation of documents. |
+| **SHA-256 and content identifiers (CIDs)** | Integrity verification and content addressing. |
+| **Dublin Core · DataCite · schema.org** | Interoperable metadata. |
+| **OAI-PMH** | Harvesting records from institutional repositories. |
+| **BagIt** | Packaging archived items together with checksums. |
+
+### Data Sources and Integrations
+
+| Source | Purpose |
+|---|---|
+| **OpenAlex** | Open catalog of scholarly works and metadata. |
+| **Unpaywall API** | Discovery of legal open-access versions of papers. |
+| **Crossref API** | DOI and publication metadata. |
+| **Internet Archive APIs** | Existing web captures and cross-mirroring. |
+
+### Selection Criteria
+
+- **Open source first.** Prefer tools anyone can inspect, run, and fork.
+- **Open standards.** Favor formats that outlive any single vendor.
+- **No single point of failure.** Every critical component must be replaceable.
+- **Low-bandwidth friendly.** Performance and accessibility on modest connections and devices.
+- **Contributor-friendly.** Widely known technologies, so more people can help.
+
+## 9. Roadmap
 
 | Phase | Focus | Key Outcomes |
 |:---:|---|---|
@@ -166,7 +233,7 @@ flowchart TB
 | **2** | **Growth** | Redundant mirrors and automated integrity checks. At-risk monitoring and rescue workflows. Translations, summaries, and offline packs. |
 | **3** | **Global Scale** | Multi-language, multi-region coverage. Formal partnerships with libraries, universities, and NGOs. Sustainable governance and funding model. |
 
-## 9. Measuring Success
+## 10. Measuring Success
 
 | Indicator | What It Tells Us |
 |---|---|
@@ -177,7 +244,7 @@ flowchart TB
 | Active contributors and partner institutions | Health of the community. |
 | Languages supported | Global inclusiveness. |
 
-## 10. Existing Landscape and the Gap
+## 11. Existing Landscape and the Gap
 
 This project does not begin from zero. Significant work already exists:
 
@@ -194,7 +261,7 @@ This project does not begin from zero. Significant work already exists:
 > [!TIP]
 > **The gap this framework targets.** These efforts are powerful but fragmented. There is room for a **unified, community-governed layer** that connects discovery, preservation, and learner-friendly access across all domains, with a particular focus on at-risk content and documented failures.
 
-## 11. Open Questions and Risks
+## 12. Open Questions and Risks
 
 > [!WARNING]
 > The following topics are intentionally left open at this sketch stage and must be resolved before implementation.
@@ -208,7 +275,7 @@ This project does not begin from zero. Significant work already exists:
 | **Funding** | How is long-term storage and maintenance financed? |
 | **Legal risk** | How are differing rules across jurisdictions managed? |
 
-## 12. How to Contribute
+## 13. How to Contribute
 
 This is an open idea, and it improves with scrutiny. You can help by:
 
@@ -217,7 +284,7 @@ This is an open idea, and it improves with scrutiny. You can help by:
 - Sharing **expertise** in archiving, law, research, education, or software.
 - **Spreading the word** to people who might want to build this.
 
-## 13. License
+## 14. License
 
 Suggested: **CC BY-SA 4.0** for this document, and an OSI-approved open-source license (for example, MIT or Apache-2.0) for any code that follows.
 
