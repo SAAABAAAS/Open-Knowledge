@@ -298,3 +298,94 @@ Suggested: **CC BY-SA 4.0** for this document, and an OSI-approved open-source l
 ![Open by default](https://img.shields.io/badge/OPEN-BY_DEFAULT-F59E0B?style=flat-square)
 
 </div>
+
+## 12. Market Opportunity: TAM, SAM and SOM
+
+### Market Sizing Methodology
+
+Open Knowledge Commons operates at the intersection of open knowledge discovery, digital preservation, research infrastructure, and educational access. Its potential audience includes students, independent learners, researchers, educators, librarians, and institutions responsible for preserving knowledge.
+
+The market is assessed through three levels:
+
+- **TAM (Total Addressable Market):** The broadest potential audience for the platform's mission and services.
+- **SAM (Serviceable Available Market):** The portion of that audience the initial platform can realistically serve through its language support, technology, and distribution channels.
+- **SOM (Serviceable Obtainable Market):** The portion of the SAM the project could realistically reach and engage during its first three years.
+
+> **Important distinction:** These figures describe potential users, not paying customers or guaranteed revenue. Open Knowledge Commons is an open-access initiative, and its financial sustainability would depend on voluntary donations, grants, institutional partnerships, sponsorships, or optional value-added services.
+
+### 12.1 Total Addressable Market (TAM)
+
+**Scope:** Global internet-connected learners, researchers, educators, and other people seeking scientific, educational, historical, and practical knowledge.
+
+The International Telecommunication Union estimated that approximately 6 billion people were using the internet in 2025. This provides a broad indicator of the potential digital reach of a global knowledge-access initiative.
+
+However, not every internet user needs or would use this platform. Therefore, the global online population should be treated as an upper-bound reference rather than the project's actual addressable audience.
+
+**Initial planning estimate:** 100 million–500 million potential users worldwide, subject to validation through audience research and existing platform usage data.
+
+**Value proposition:** Make knowledge easier to discover, understand, verify, and preserve, regardless of a user's location or institutional affiliation.
+
+### 12.2 Serviceable Available Market (SAM)
+
+**Scope:** Digitally connected students, self-taught learners, independent researchers, educators, and open-knowledge contributors who actively seek reliable resources and can be reached through the project's initial languages and online distribution channels.
+
+The initial serviceable audience would prioritize English- and Spanish-speaking users, with particular attention to students, people learning independently, and communities with limited access to institutional resources.
+
+**Initial planning estimate:** 1 million–10 million potential users.
+
+This estimate represents a hypothesis to validate, not a measured count of people currently seeking this exact solution. Future research should narrow the segment using surveys, search-demand analysis, existing platform data, and interviews with educational institutions.
+
+### 12.3 Serviceable Obtainable Market (SOM)
+
+**Scope:** The subset of the initial target audience that Open Knowledge Commons could realistically attract, activate, and retain during its first three years.
+
+The initial acquisition strategy would focus on:
+
+- Open-source and knowledge-sharing communities.
+- Student and researcher communities.
+- Partnerships with schools, universities, libraries, and educational organizations.
+- Educational content, community contributions, and organic search.
+- Contributors interested in digital preservation and open access.
+
+**Three-year planning target:** 1,000–10,000 registered users, with retention, active participation, and the number of successfully preserved resources tracked as separate indicators.
+
+This target is a scenario for planning purposes, not a forecast based on existing traction.
+
+### 12.4 Market Sizing Summary
+
+| Market | Definition | Preliminary estimate |
+|---|---|---:|
+| TAM | Potential global audience | 100M–500M users |
+| SAM | Reachable initial audience | 1M–10M users |
+| SOM | Three-year acquisition target | 1K–10K registered users |
+
+The estimates will be refined as the project establishes its initial domain, validates user demand, measures adoption, and identifies institutional partners.
+
+### 12.5 Sustainability and Funding Opportunity
+
+Open Knowledge Commons should distinguish between the size of its social impact opportunity and its revenue opportunity.
+
+The platform's core mission is to preserve and improve access to knowledge. Access to legally available public resources should remain consistent with the project's open-access principles.
+
+Potential funding sources include:
+
+- Research and digital-preservation grants.
+- Donations from individuals and philanthropic organizations.
+- Institutional partnerships with universities, libraries, and museums.
+- Sponsorships aligned with the project's mission.
+- Optional institutional tools, preservation services, or managed infrastructure.
+
+Revenue estimates should only be developed after validating the funding model, willingness to pay, operating costs, and the number of prospective institutional partners.
+
+### 12.6 Validation Plan
+
+Before treating these estimates as established market figures, the project should:
+
+1. Define its initial content domain and primary user segment.
+2. Analyze comparable platforms and the audiences they serve.
+3. Interview at least 20 prospective users and 5 potential institutional partners.
+4. Launch a landing page to measure qualified interest and sign-ups.
+5. Track activation, repeat usage, successful resource discovery, and contributions.
+6. Revise the TAM, SAM, and SOM assumptions using observed data.
+
+**Reference:** International Telecommunication Union (ITU), *Facts and Figures 2025*. https://www.itu.int/en/ITU-D/Statistics/Pages/facts/default.aspx
